@@ -45,7 +45,7 @@ void destampar() {
 }
 ```
 
-### 🔗 Link para a atividade formulada: [Atividade 1](https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/tree/main/Atividade/atividade1))
+### 🔗 Link para a atividade formulada: [Atividade 1](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/tree/main/Atividade/atividade1)
 
 <br>
 
