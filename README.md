@@ -39,7 +39,7 @@ void destampar() {
 <br>
 
 ## Visibilidade de Atributos e Métodos
-Defindo a visualização de atributos e metados da classe caneta🖊️
+Defindo a visualização 👀 de atributos e metados da classe caneta 🖊️.
 >Exemplo:
 ```java
 public class Caneta{
