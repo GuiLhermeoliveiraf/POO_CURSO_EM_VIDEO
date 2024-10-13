@@ -43,11 +43,11 @@ Defindo a visualização de atributos e metados da classe caneta🖊️
 >Exemplo:
 ```java
 public class Caneta{
-    public String modelo;
-    public String cor;
-    private float ponta;
-    protected int carga;
-    private boolean tampada;
+    public String modelo;      // ✏️ Modelo da caneta
+    public String cor;         // 🎨 Cor da caneta
+    private float ponta;       // 🖊️ Espessura da ponta
+    protected int carga;       // 🔋 Quantidade de carga
+    private boolean tampada;   // 🔒 Está tampada?
 }
 ``` 
 existem três principais níveis de visibilidade: public, private, protected. Abaixo, detalho cada um desses níveis:
