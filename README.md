@@ -6,7 +6,7 @@
 
 ## Criando uma classe em Java
 Criando a classe Caneta 🖊️, com alguns atributos como modelo, cor, ponta, carga e se está tampada ou não.  
->Exemplo: 
+>Exemplo 👨‍💻💻: 
 
 ```java
 public class Caneta {
@@ -23,7 +23,7 @@ public class Caneta {
 
 ## Métodos
 Criando dois métodos para tampar 🔒 e destampar 🔓 a caneta:  
->Exemplo: 
+>Exemplo 👨‍💻💻: 
 
 ```java
 void tampar() {
@@ -40,7 +40,7 @@ void destampar() {
 
 ## Visibilidade de Atributos e Métodos
 Defindo a visualização 👀 de atributos e metados da classe caneta 🖊️.
->Exemplo:
+>Exemplo 👨‍💻💻:
 ```java
 public class Caneta{
     public String modelo;      // ✏️ Modelo da caneta
@@ -53,6 +53,54 @@ public class Caneta{
 existem três principais níveis de visibilidade: public, private, protected. Abaixo, detalho cada um desses níveis:
 
 📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Visibilidade de Atributos e Métodos](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Visibilidade.md)**
+
+<br>
+
+## Encapsulamento 🔒
+O principal objetivo do encapsulamento é proteger e ocultar os dados de uma classe, permitindo que seu acesso seja controlado através de métodos específicos (getters e setters). Isso cria uma separação clara entre a implementação interna de uma classe e a interface pública que é exposta para os outros componentes do sistema
+Exemplo 👨‍💻💻:
+
+```java
+public class Caneta {
+    private String cor;     // Atributo privado
+    private boolean tampada;  // Atributo privado
+
+    // Construtor para inicializar a caneta
+    public Caneta(String cor) {
+        this.cor = cor;
+        this.tampada = true;
+    }
+
+    // Getter para acessar a cor da caneta
+    public String getCor() {
+        return this.cor;
+    }
+
+    // Setter para modificar a cor da caneta
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    // Método para tampar a caneta
+    public void tampar() {
+        this.tampada = true;
+    }
+
+    // Método para destampar a caneta
+    public void destampar() {
+        this.tampada = false;
+    }
+
+    // Método para verificar o estado da caneta
+    public boolean isTampada() {
+        return this.tampada;
+    }
+}
+``` 
+Os atributos `cor` e `tampada` estão encapsulados, ou seja, só podem ser acessados indiretamente por meio de métodos públicos (getters e setters).
+
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Encapsulamento 🔒](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Encapsulamento.md)**
+
 
 
 
