@@ -1,12 +1,12 @@
-# Conceitos de POO 
+# Conceitos de POO 🚀 
 ## Autor: [Guilherme Guimarães](https://github.com/GuiLhermeoliveiraf/)
 ### Aqui temos exemplos de conceitos de POO como 📚 Classes, 🧱 Objetos, 🔧 Métodos, etc. Explicações e exemplos sobre POO.
 **[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/GuiLhermeoliveiraf/)**  
 **[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilhermeoliiveira/)**
 
-## Criando uma classe em Java
+## Criando uma classe em Java 🏗️
 Criando a classe Caneta 🖊️, com alguns atributos como modelo, cor, ponta, carga e se está tampada ou não.  
->Exemplo 👨‍💻💻: 
+> Exemplo 👨‍💻💻: 
 
 ```java
 public class Caneta {
@@ -21,9 +21,9 @@ public class Caneta {
 
 <br>
 
-## Métodos
+## Métodos ⚙️
 Criando dois métodos para tampar 🔒 e destampar 🔓 a caneta:  
->Exemplo 👨‍💻💻: 
+> Exemplo 👨‍💻💻: 
 
 ```java
 void tampar() {
@@ -38,9 +38,9 @@ void destampar() {
 
 <br>
 
-## Visibilidade de Atributos e Métodos
-Defindo a visualização 👀 de atributos e metados da classe caneta 🖊️.
->Exemplo 👨‍💻💻:
+## Visibilidade de Atributos e Métodos 👁️
+Definindo a visualização 👀 de atributos e métodos da classe caneta 🖊️.
+> Exemplo 👨‍💻💻:
 ```java
 public class Caneta{
     public String modelo;      // ✏️ Modelo da caneta
@@ -50,14 +50,14 @@ public class Caneta{
     private boolean tampada;   // 🔒 Está tampada?
 }
 ``` 
-existem três principais níveis de visibilidade: public, private, protected. Abaixo, detalho cada um desses níveis:
+Existem três principais níveis de visibilidade: public, private, protected. Abaixo, detalho cada um desses níveis:
 
 📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Visibilidade de Atributos e Métodos](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Visibilidade.md)**
 
 <br>
 
 ## Encapsulamento 🔒
-O principal objetivo do encapsulamento é proteger e ocultar os dados de uma classe, permitindo que seu acesso seja controlado através de métodos específicos (getters e setters). Isso cria uma separação clara entre a implementação interna de uma classe e a interface pública que é exposta para os outros componentes do sistema
+O principal objetivo do encapsulamento é proteger e ocultar os dados de uma classe, permitindo que seu acesso seja controlado através de métodos específicos (getters e setters). Isso cria uma separação clara entre a implementação interna de uma classe e a interface pública que é exposta para os outros componentes do sistema.
 Exemplo 👨‍💻💻:
 
 ```java
@@ -100,8 +100,6 @@ public class Caneta {
 Os atributos `cor` e `tampada` estão encapsulados, ou seja, só podem ser acessados indiretamente por meio de métodos públicos (getters e setters).
 
 📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Encapsulamento 🔒](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Encapsulamento.md)**
-
-
 
 
 
