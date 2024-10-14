@@ -58,7 +58,8 @@ Existem três principais níveis de visibilidade: public, private, protected. Ab
 
 ## Encapsulamento 🔒
 O principal objetivo do encapsulamento é proteger e ocultar os dados de uma classe, permitindo que seu acesso seja controlado através de métodos específicos (getters e setters). Isso cria uma separação clara entre a implementação interna de uma classe e a interface pública que é exposta para os outros componentes do sistema.
-Exemplo 👨‍💻💻:
+
+>Exemplo 👨‍💻💻:
 
 ```java
 public class Caneta {
