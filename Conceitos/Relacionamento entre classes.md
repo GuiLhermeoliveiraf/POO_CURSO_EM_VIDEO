@@ -1,6 +1,6 @@
 # Relacionamento entre classes 👥
-#### Relação de Agregação
-> A agregação é um tipo de relação entre classes em que uma classe contém ou é composta por objetos de outra classe, mas ambos os objetos podem existir de forma independente. A agregação representa uma relação "tem um", onde a classe "A" tem um objeto da classe "B".
+### Relação de Agregação
+> A agregação é um tipo de relação entre classes em que uma classe contém ou é composta por objetos de outra classe, mas ambos os objetos podem existir de forma independente. A agregação representa uma relação "tem um", onde a classe "A" tem um objeto >da classe "B".
 
 <br>
 
