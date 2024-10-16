@@ -204,4 +204,4 @@ System.out.println("Após remoção: " + nomes);  // Saída: [Maria, Guilherme]
 ``` 
 Diferente dos arrays, o ArrayList é uma classe que faz parte do pacote java.util e permite armazenar elementos de forma dinâmica. Ou seja, o tamanho do ArrayList pode crescer ou diminuir dinamicamente, ao contrário dos arrays, que têm tamanho fixo.
 
-📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Arrays e ArrayList 👥](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Arrays%20e%20ArrayList.md)**
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Arrays e ArrayList 🧮](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Arrays%20e%20ArrayList.md)**
