@@ -176,7 +176,7 @@ Neste exemplo, a classe Universidade contém uma lista de objetos da classe Alun
 
 <br>
 
-## Arrays e ArrayList em Java 🧮
+## Arrays e ArrayList  🧮
 Em Java, os arrays e a classe ArrayList são usados para armazenar coleções de elementos. Ambos têm características próprias e usos diferentes dependendo do cenário.
 
 > Exemplo Array 🔧:
