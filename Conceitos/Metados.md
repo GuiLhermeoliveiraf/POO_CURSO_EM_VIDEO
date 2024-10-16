@@ -1,4 +1,4 @@
-# Criando um método
+# Criando um método ⚙️
 > Métodos da classe Caneta, da primeira atividade em Java POO
 
 🌟 **Métodos para gerenciar o status e ações de uma caneta!** 🖊️✏️
