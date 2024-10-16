@@ -52,7 +52,7 @@ public class Caneta{
 ``` 
 Existem três principais níveis de visibilidade: public, private, protected. Abaixo, detalho cada um desses níveis:
 
-📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Visibilidade de Atributos e Métodos](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Visibilidade.md)**
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Visibilidade de Atributos e Métodos 👁️](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Visibilidade.md)**
 
 <br>
 
