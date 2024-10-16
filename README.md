@@ -105,7 +105,7 @@ Os atributos `cor` e `tampada` estão encapsulados, ou seja, só podem ser acess
 <br>
 
 ## Relacionamento entre classes 👥
-A agregação é um tipo de relação entre classes em que uma classe contém ou é composta por objetos de outra classe, mas ambos os objetos podem existir de forma independente. A agregação representa uma relação "tem um", onde a classe "A" tem um objeto >da classe "B".
+A agregação é um tipo de relação entre classes em que uma classe contém ou é composta por objetos de outra classe, mas ambos os objetos podem existir de forma independente. A agregação representa uma relação "tem um", onde a classe "A" tem um objeto da classe "B".
 
 >Exemplo 👨‍💻💻:
 
@@ -172,6 +172,36 @@ public class Main {
 ``` 
 Neste exemplo, a classe Universidade contém uma lista de objetos da classe Aluno. No entanto, os alunos não dependem diretamente da universidade para existir. Eles podem existir fora do contexto da universidade.
 
-📄 Mais exemplos na página exclusiva do meu GitHub **[Relacionamento entre classes 👥](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Relacionamento%20entre%20classes.md)**
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Relacionamento entre classes 👥](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Relacionamento%20entre%20classes.md)**
 
+<br>
 
+## Arrays e ArrayList em Java 🧮
+Em Java, os arrays e a classe ArrayList são usados para armazenar coleções de elementos. Ambos têm características próprias e usos diferentes dependendo do cenário.
+
+> Exemplo Array 🔧:
+
+```java
+// Declarando e criando um array de inteiros
+int[] numeros = new int[5];  // Um array de 5 elementos do tipo int
+numeros[0] = 10;  // Inicializando o primeiro elemento do array
+``` 
+
+> Exemplo ArrayList 📋:
+
+```java
+ArrayList<String> nomes = new ArrayList<>();
+nomes.add("Lucas");
+nomes.add("Maria");
+nomes.add("Guilherme");
+
+System.out.println("Tamanho: " + nomes.size());  // Saída: 3
+
+System.out.println("Nome na posição 1: " + nomes.get(1));  // Saída: Maria
+
+nomes.remove(0);  // Remove "Lucas"
+System.out.println("Após remoção: " + nomes);  // Saída: [Maria, Guilherme]
+``` 
+Diferente dos arrays, o ArrayList é uma classe que faz parte do pacote java.util e permite armazenar elementos de forma dinâmica. Ou seja, o tamanho do ArrayList pode crescer ou diminuir dinamicamente, ao contrário dos arrays, que têm tamanho fixo.
+
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Arrays e ArrayList 👥](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Arrays%20e%20ArrayList.md)**
