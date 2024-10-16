@@ -102,5 +102,76 @@ Os atributos `cor` e `tampada` estão encapsulados, ou seja, só podem ser acess
 
 📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Encapsulamento 🔒](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Encapsulamento.md)**
 
+<br>
+
+## Relacionamento entre classes 👥
+A agregação é um tipo de relação entre classes em que uma classe contém ou é composta por objetos de outra classe, mas ambos os objetos podem existir de forma independente. A agregação representa uma relação "tem um", onde a classe "A" tem um objeto >da classe "B".
+
+>Exemplo 👨‍💻💻:
+
+```java
+// Classe Aluno
+public class Aluno {
+    private String nome;
+
+    public Aluno(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+}
+
+// Classe Universidade
+import java.util.ArrayList;
+import java.util.List;
+
+public class Universidade {
+    private String nome;
+    private List<Aluno> alunos;
+
+    // Construtor
+    public Universidade(String nome) {
+        this.nome = nome;
+        this.alunos = new ArrayList<>();
+    }
+
+    // Método para adicionar aluno
+    public void adicionarAluno(Aluno aluno) {
+        alunos.add(aluno);
+    }
+
+    // Método para listar os alunos
+    public void listarAlunos() {
+        System.out.println("Alunos da Universidade " + nome + ":");
+        for (Aluno aluno : alunos) {
+            System.out.println(aluno.getNome());
+        }
+    }
+}
+
+// Classe Principal
+public class Main {
+    public static void main(String[] args) {
+        // Criando alunos
+        Aluno aluno1 = new Aluno("Lucas");
+        Aluno aluno2 = new Aluno("Maria");
+
+        // Criando uma universidade
+        Universidade universidade = new Universidade("Universidade Federal");
+
+        // Adicionando os alunos à universidade
+        universidade.adicionarAluno(aluno1);
+        universidade.adicionarAluno(aluno2);
+
+        // Listando os alunos da universidade
+        universidade.listarAlunos();
+    }
+}
+``` 
+Neste exemplo, a classe Universidade contém uma lista de objetos da classe Aluno. No entanto, os alunos não dependem diretamente da universidade para existir. Eles podem existir fora do contexto da universidade.
+
+📄 Mais exemplos na página exclusiva do meu GitHub **[Relacionamento entre classes 👥](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Relacionamento%20entre%20classes.md)**
 
 
