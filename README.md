@@ -17,7 +17,7 @@ public class Caneta {
     boolean tampada; // 🔒 Está tampada?
 }
 ``` 
-📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Classes](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Classes.md)**
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Classes 🏗️](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Classes.md)**
 
 <br>
 
@@ -34,7 +34,7 @@ void destampar() {
     this.tampada = false;  // 🔓 Caneta está destampada
 }
 ``` 
-📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Métodos](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Metados.md)**
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Métodos ⚙️](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Metados.md)**
 
 <br>
 
