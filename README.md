@@ -205,3 +205,49 @@ System.out.println("Após remoção: " + nomes);  // Saída: [Maria, Guilherme]
 Diferente dos arrays, o ArrayList é uma classe que faz parte do pacote java.util e permite armazenar elementos de forma dinâmica. Ou seja, o tamanho do ArrayList pode crescer ou diminuir dinamicamente, ao contrário dos arrays, que têm tamanho fixo.
 
 📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Arrays e ArrayList 🧮](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Arrays%20e%20ArrayList.md)**
+
+<br>
+
+## Herança 👨‍👩‍👧‍👦
+Em termos simples, a herança é um mecanismo pelo qual uma classe (conhecida como classe filha ou subclasse) pode derivar outra classe (chamada de classe pai ou superclasse), herdando seus atributos e métodos. A subclasse pode também adicionar novos atributos, métodos ou sobrescrever (override) métodos da classe pai, adaptando-os conforme necessário.
+
+>Exemplo 👨‍💻💻:
+
+```java
+// Superclasse
+public class Animal {
+    // Atributo
+    String nome;
+
+    // Método
+    public void fazerSom() {
+        System.out.println("O animal faz um som");
+    }
+}
+
+// Subclasse Cachorro que herda de Animal
+public class Cachorro extends Animal {
+    // Método específico para Cachorro
+    public void abanarRabo() {
+        System.out.println(nome + " está abanando o rabo.");
+    }
+
+    // Sobrescreve o método fazerSom
+    @Override
+    public void fazerSom() {
+        System.out.println("O cachorro late");
+    }
+}
+
+// Subclasse Gato que herda de Animal
+public class Gato extends Animal {
+    // Sobrescreve o método fazerSom
+    @Override
+    public void fazerSom() {
+        System.out.println("O gato mia");
+    }
+}
+``` 
+Imagine que você tenha uma superclasse Animal e várias subclasses como Cachorro e Gato. A superclasse define os atributos e métodos básicos que todos os animais possuem.
+
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Herança 👨‍👩‍👧‍👦](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Henran%C3%A7a.md)**
