@@ -1,14 +1,15 @@
-# Herança
+
+# Herança 👨‍👩‍👧‍👦
 > Herança é um dos pilares da Programação Orientada a Objetos (POO). Ela permite que uma classe herde características (atributos) e comportamentos (métodos) de outra classe. Isso facilita a reutilização de código e a criação de hierarquias de classes.
 
- <br>
+<br>
 
-## Caracteriscas de Henrança 
+## Características de Herança 🏛️:
 
-### Reutilização de Código
+### Reutilização de Código ♻️:
 - Um dos principais benefícios é a reutilização de código existente. A herança permite que classes filhas herdem métodos e atributos de classes pais, evitando a duplicação de código, reduzindo erros e melhorando a manutenção.
 
-### Organização 
+### Organização 🗂️:
 
 - A herança ajuda a criar uma estrutura de classes de forma hierárquica, onde conceitos mais genéricos estão no topo (superclasses) e conceitos mais específicos estão na base (subclasses). Isso reflete melhor o modelo do mundo real e permite uma organização clara e consistente do código.  
 
@@ -16,16 +17,16 @@
 
 - Ao herdar atributos e métodos comuns, reduz-se a quantidade de código redundante, promovendo um código mais limpo e modular. Isso resulta em um software mais legível e fácil de entender.
 
-### Polimorfismo
+### Polimorfismo 🔄:
 
 - A herança está fortemente ligada ao conceito de polimorfismo, que permite que objetos de diferentes classes filhas sejam tratados de forma uniforme por meio de uma referência à superclasse. Isso aumenta a flexibilidade do código, permitindo que métodos aceitem objetos de qualquer subclasse e comportem-se de acordo com o tipo de objeto recebido.
 
-> Exemplo: Em um sistema de pagamento, se você tem uma classe Pagamento e subclasses Cartao e Boleto, um método que aceita um objeto Pagamento pode operar sobre instâncias de Cartao ou Boleto sem precisar conhecer o tipo específico.
+> Exemplo: Em um sistema de pagamento, se você tem uma classe `Pagamento` e subclasses `Cartao` e `Boleto`, um método que aceita um objeto `Pagamento` pode operar sobre instâncias de `Cartao` ou `Boleto` sem precisar conhecer o tipo específico.
 
 <br>
 
-## Exemplo
-> Imagine que você tenha uma superclasse Animal e várias subclasses como Cachorro e Gato. A superclasse define os atributos e métodos básicos que todos os animais possuem.  
+## Exemplo 💻:
+> Imagine que você tenha uma superclasse `Animal` e várias subclasses como `Cachorro` e `Gato`. A superclasse define os atributos e métodos básicos que todos os animais possuem.  
 
 <br>
 
@@ -63,28 +64,23 @@ public class Gato extends Animal {
         System.out.println("O gato mia");
     }
 }
-
-
 ``` 
-### Explicação:
- 
-- Superclasse Animal: Define o atributo nome e o método fazerSom().   
 
-- Subclasse Cachorro e Gato: Herdam o atributo nome e o método fazerSom() da classe Animal.   
+### Explicação 📝:
 
-- A subclasse Cachorro define um método específico chamado abanarRabo() e sobrescreve (@Override) o método fazerSom() para fornecer um comportamento específico.   
+- **Superclasse `Animal`**: Define o atributo `nome` e o método `fazerSom()`.   
 
-- A subclasse Gato também sobrescreve o método fazerSom().    
+- **Subclasse `Cachorro` e `Gato`**: Herdam o atributo `nome` e o método `fazerSom()` da classe `Animal`.   
+
+- A subclasse `Cachorro` define um método específico chamado `abanarRabo()` e sobrescreve (`@Override`) o método `fazerSom()` para fornecer um comportamento específico.   
+
+- A subclasse `Gato` também sobrescreve o método `fazerSom()`.    
 
 <br>
 
-
-## Herança em resumo
+## Herança em resumo 📄:
 
 - Subclasses herdam características comuns da superclasse.
-
 - Permite adicionar novos comportamentos específicos nas subclasses.
-
 - Estrutura classes em hierarquias, refletindo melhor o mundo real.  
-
--  Métodos podem ser adaptados nas subclasses, mantendo um comportamento base.
+- Métodos podem ser adaptados nas subclasses, mantendo um comportamento base.
