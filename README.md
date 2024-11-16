@@ -254,7 +254,7 @@ Imagine que você tenha uma superclasse Animal e várias subclasses como Cachorr
 
 <br>
 
-# Polimorfismo em Java 🌟
+# Polimorfismo 🌟
 Sobreposição e Sobrecarga, falando tambem sobre Abstração, O Polimorfismo é um dos pilares da Programação Orientada a Objetos (POO) e refere-se à capacidade de um objeto ou método assumir múltiplas formas, permitindo que o mesmo código funcione com diferentes tipos de objetos. Ele melhora a flexibilidade e a extensibilidade do código.
 
 >Exemplo 👨‍💻💻:
