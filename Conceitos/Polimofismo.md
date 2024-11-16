@@ -93,54 +93,110 @@ public class TestePolimorfismo {
 ### 💻 Exemplo Prático
 
 ```java
-// Classe abstrata
-abstract class Forma {
-    double altura;
-    double largura;
+// Classe abstrata Pessoa
+public abstract class Pessoa {
+    private String nome;
+    private String cpf;
 
-    public Forma(double altura, double largura) {
-        this.altura = altura;
-        this.largura = largura;
+    public Pessoa(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
     }
 
-    // Método abstrato (sem implementação)
-    public abstract double calcularArea();
-
-    // Método concreto (com implementação)
-    public void exibirDimensoes() {
-        System.out.println("Altura: " + altura + ", Largura: " + largura);
+    public String getNome() {
+        return nome;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    // Método abstrato que será implementado pelas subclasses
+    public abstract void exibirInformacoes();
 }
 
-// Classe concreta que estende a classe abstrata
-class Retangulo extends Forma {
-    public Retangulo(double altura, double largura) {
-        super(altura, largura);
+// Classe Aluno
+public class Aluno extends Pessoa {
+    private String matricula;
+
+    public Aluno(String nome, String cpf, String matricula) {
+        super(nome, cpf);
+        this.matricula = matricula;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
     @Override
-    public double calcularArea() {
-        return altura * largura;
+    public void exibirInformacoes() {
+        System.out.println("Aluno:");
+        System.out.println("Nome: " + getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Matrícula: " + matricula);
     }
 }
 
-public class TesteAbstracao {
-    public static void main(String[] args) {
-        Forma retangulo = new Retangulo(5, 10);
-        retangulo.exibirDimensoes(); // Saída: Altura: 5.0, Largura: 10.0
-        System.out.println("Área: " + retangulo.calcularArea()); // Saída: Área: 50.0
+// Classe Professor
+public class Professor extends Pessoa {
+    private String disciplina;
+
+    public Professor(String nome, String cpf, String disciplina) {
+        super(nome, cpf);
+        this.disciplina = disciplina;
+    }
+
+    public String getDisciplina() {
+        return disciplina;
+    }
+
+    public void setDisciplina(String disciplina) {
+        this.disciplina = disciplina;
+    }
+
+    @Override
+    public void exibirInformacoes() {
+        System.out.println("Professor:");
+        System.out.println("Nome: " + getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Disciplina: " + disciplina);
     }
 }
+
+// Classe principal para testar
+public class Main {
+    public static void main(String[] args) {
+        Aluno aluno = new Aluno("Lucas Maciel", "123.456.789-00", "2024001");
+        Professor professor = new Professor("Rafael Silva", "987.654.321-00", "Matemática");
+
+        aluno.exibirInformacoes();
+        System.out.println();
+        professor.exibirInformacoes();
+    }
+}
+
 ```
 
 ---
 
 ### 🔍 Explicação do Exemplo:
 
-- 🔹 A classe **Forma** é abstrata e serve como um modelo genérico para formas geométricas.
-- 📐 O método `calcularArea` é abstrato, ou seja, não tem implementação na classe **Forma**. Cada classe que herda de **Forma** é obrigada a fornecer sua própria implementação.
-- 📏 O método `exibirDimensoes` é concreto e pode ser utilizado diretamente pelas subclasses.
-- 🔧 A classe **Retangulo** implementa o método abstrato `calcularArea`, fornecendo um comportamento específico.
+- 🔹 A classe Pessoa é abstrata e contém atributos e métodos comuns para Aluno e Professor. Também define um método abstrato exibirInformacoes() que deve ser implementado pelas subclasses..
+- 📐 Aluno e Professor herdam de Pessoa e implementam o método exibirInformacoes() para exibir informações específicas de cada tipo.
+- 📏 O método exibirInformacoes() é sobrescrito (@Override) nas subclasses.
+- 🔧 Este código demonstra como criar uma estrutura de classes bem organizada em Java, aplicando abstração, herança, e polimorfismo. A classe Pessoa encapsula os comportamentos básicos, enquanto Aluno e Professor representam especializações, adicionando comportamentos e atributos únicos. A lógica é clara e reutilizável, evitando duplicação de código.
 
 ---
 
