@@ -193,10 +193,10 @@ public class Main {
 
 ### 🔍 Explicação do Exemplo:
 
-- 🔹 A classe Pessoa é abstrata e contém atributos e métodos comuns para Aluno e Professor. Também define um método abstrato exibirInformacoes() que deve ser implementado pelas subclasses..
-- 📐 Aluno e Professor herdam de Pessoa e implementam o método exibirInformacoes() para exibir informações específicas de cada tipo.
-- 📏 O método exibirInformacoes() é sobrescrito (@Override) nas subclasses.
-- 🔧 Este código demonstra como criar uma estrutura de classes bem organizada em Java, aplicando abstração, herança, e polimorfismo. A classe Pessoa encapsula os comportamentos básicos, enquanto Aluno e Professor representam especializações, adicionando comportamentos e atributos únicos. A lógica é clara e reutilizável, evitando duplicação de código.
+- 🔹 A classe **Pessoa** é abstrata e contém atributos e métodos comuns para **Aluno** e **Professor**. Também define um método abstrato `exibirInformacoes()` que deve ser implementado pelas subclasses.
+- 📐 **Aluno** e **Professor** herdam de **Pessoa** e implementam o método `exibirInformacoes()` para exibir informações específicas de cada tipo.
+- 📏 O método `exibirInformacoes()` é sobrescrito (`@Override`) nas subclasses.
+- 🔧 Este código demonstra como criar uma estrutura de classes bem organizada em Java, aplicando abstração, herança, e polimorfismo. A classe **Pessoa** encapsula os comportamentos básicos, enquanto **Aluno** e **Professor** representam especializações, adicionando comportamentos e atributos únicos.
 
 ---
 
