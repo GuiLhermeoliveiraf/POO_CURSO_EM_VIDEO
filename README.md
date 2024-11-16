@@ -251,3 +251,51 @@ public class Gato extends Animal {
 Imagine que você tenha uma superclasse Animal e várias subclasses como Cachorro e Gato. A superclasse define os atributos e métodos básicos que todos os animais possuem.
 
 📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Herança 👨‍👩‍👧‍👦](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Henran%C3%A7a.md)**
+
+<br>
+
+# Polimorfismo em Java 🌟
+Sobreposição e Sobrecarga, falando tambem sobre Abstração, O Polimorfismo é um dos pilares da Programação Orientada a Objetos (POO) e refere-se à capacidade de um objeto ou método assumir múltiplas formas, permitindo que o mesmo código funcione com diferentes tipos de objetos. Ele melhora a flexibilidade e a extensibilidade do código.
+
+>Exemplo 👨‍💻💻:
+
+```java
+// Classe Pai
+class Animal {
+    public void emitirSom() {
+        System.out.println("O animal faz um som genérico.");
+    }
+}
+
+// Classe Filha 1
+class Cachorro extends Animal {
+    @Override
+    public void emitirSom() {
+        System.out.println("O cachorro late: Au Au!");
+    }
+}
+
+// Classe Filha 2
+class Gato extends Animal {
+    @Override
+    public void emitirSom() {
+        System.out.println("O gato mia: Miau!");
+    }
+}
+
+// Classe principal
+public class TestePolimorfismo {
+    public static void main(String[] args) {
+        Animal meuAnimal;
+
+        meuAnimal = new Cachorro(); // Referência genérica para Cachorro
+        meuAnimal.emitirSom(); // Saída: O cachorro late: Au Au!
+
+        meuAnimal = new Gato(); // Referência genérica para Gato
+        meuAnimal.emitirSom(); // Saída: O gato mia: Miau!
+    }
+}
+```
+A classe **Animal** possui o método `emitirSom`, que pode ser sobrescrito pelas classes filhas. As classes **Cachorro** e **Gato** sobrescrevem o método `emitirSom` para fornecer comportamentos específicos.
+
+📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Polimorfismo 🌟](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Polimofismo.md)**
