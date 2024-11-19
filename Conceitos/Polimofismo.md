@@ -71,9 +71,7 @@ public class TestePolimorfismo {
 
 <br>
 
-# 🌟 Abstração em Java
-
-## 🔍 O que é Abstração?
+## 🌟 Abstração em Java
 
 > A abstração permite focar no **"o que"** um objeto faz, em vez de **"como"** ele faz.
 > 
@@ -215,3 +213,74 @@ public class Main {
 - 🛡️ **Manutenção**: Como as implementações são separadas, é mais fácil fazer mudanças sem afetar o código que utiliza essas abstrações.
 - 🌟 **Facilita a Extensibilidade**: Novas funcionalidades podem ser adicionadas sem modificar o código existente.
 
+<br>
+
+
+## 🧱 Sobrecarga
+
+> O Polimorfismo de Sobrecarga (ou Overloading) ocorre quando vários métodos na mesma classe têm o mesmo nome, mas diferem na assinatura (quantidade, tipo ou ordem dos parâmetros). É um exemplo de polimorfismo em tempo de compilação, pois o método que será executado é determinado pelo compilador com base nos argumentos passados.
+
+---
+
+### 🔑 Características do Polimorfismo de Sobrecarga
+
+- 📛 **Métodos com o mesmo nome**: Os métodos devem ter o mesmo nome, mas assinaturas diferentes.
+- 🕒 **Decisão em tempo de compilação**: O compilador decide qual método chamar com base nos argumentos passados.
+- 📦 **Mesma classe**: Os métodos sobrecarregados devem estar na mesma classe (não envolve herança).
+
+---
+
+### 💻 Exemplo Prático
+
+```java
+class Calculadora {
+    // Método para somar dois números inteiros
+    public int somar(int a, int b) {
+        return a + b;
+    }
+
+    // Método para somar três números inteiros
+    public int somar(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Método para somar dois números de ponto flutuante
+    public double somar(double a, double b) {
+        return a + b;
+    }
+}
+
+public class TesteSobrecarga {
+    public static void main(String[] args) {
+        Calculadora calc = new Calculadora();
+
+        System.out.println(calc.somar(2, 3));          // Saída: 5
+        System.out.println(calc.somar(2, 3, 4));       // Saída: 9
+        System.out.println(calc.somar(2.5, 3.5));      // Saída: 6.0
+    }
+}
+```
+
+---
+
+### 🔍 Como o compilador escolhe o método?
+
+- ✅ O compilador avalia os argumentos passados para determinar qual assinatura de método é compatível.
+- 🔄 Ele verifica o tipo de dado e a ordem dos parâmetros.
+- ⚠️ Se houver várias opções possíveis, pode ocorrer um erro de ambiguidade.
+
+---
+
+### 📜 Regras para Sobrecarga
+
+- **📋 Assinatura diferente**: O número, tipo ou ordem dos parâmetros deve ser diferente.
+  - Apenas mudar o tipo de retorno **não é suficiente** para sobrecarga.
+- **🔐 Pode incluir modificadores de acesso**: Os métodos sobrecarregados podem ter diferentes níveis de acesso (ex.: `public`, `protected`).
+
+---
+
+### ✅ Vantagens da Sobrecarga
+
+- 📝 **Clareza**: Permite usar o mesmo nome para métodos que realizam ações semelhantes, tornando o código mais legível.
+- 🔧 **Flexibilidade**: Permite adaptar o comportamento dos métodos para diferentes tipos e números de parâmetros.
+- 📚 **Organização**: Evita a criação de vários métodos com nomes diferentes para ações relacionadas.
