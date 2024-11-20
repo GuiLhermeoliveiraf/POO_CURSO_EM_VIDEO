@@ -300,4 +300,4 @@ A classe **Animal** possui o método `emitirSom`, que pode ser sobrescrito pelas
 
 📄 Mais exemplos na página exclusiva do meu GitHub **[Resumo de Polimorfismo 🌟](https://github.com/GuiLhermeoliveiraf/POO_CURSO_EM_VIDEO/blob/main/Conceitos/Polimofismo.md)**
 
-<h1><a href="mateusf.com">TETEUS TESÃO</a></h1>
+
