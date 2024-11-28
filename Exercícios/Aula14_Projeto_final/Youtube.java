@@ -9,5 +9,11 @@ public class Youtube {
 
         g[0] = new Gafanhoto("Guilherme", 20, "Masculino", "Gmail");
         g[1] = new Gafanhoto("Daniel", 50, "Masculino", "Fapam");
+
+        Visulacao vis = new Visulacao(g[1] ,v[0]);
+
+        System.out.println(vis.toString());
+
+
     }
 }
